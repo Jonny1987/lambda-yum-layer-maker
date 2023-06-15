@@ -1,0 +1,6 @@
+services:
+  make-yum-layer:
+    build: ./
+    volumes:
+      - ~/.aws:/root/.aws:ro
+      - ./add-repos.txt:/add-repos.txt:ro
